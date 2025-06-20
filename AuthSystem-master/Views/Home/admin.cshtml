@@ -1,0 +1,114 @@
+﻿@{
+    ViewData["Title"] = "Admin Dashboard";
+}
+
+<div class="container mt-5">
+    <h2 class="mb-4">Admin Dashboard</h2>
+
+    <div class="row g-4 mb-5">
+        <div class="col-md-3">
+            <div class="card shadow-sm border-0">
+                <div class="card-body">
+                    <h6 class="card-title">Total Users</h6>
+                    <p class="display-6 fw-bold text-primary">45</p>
+                    <p class="text-muted">Registered system users</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card shadow-sm border-0">
+                <div class="card-body">
+                    <h6 class="card-title">Open Tickets</h6>
+                    <p class="display-6 fw-bold text-danger">18</p>
+                    <p class="text-muted">Unresolved tickets</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card shadow-sm border-0">
+                <div class="card-body">
+                    <h6 class="card-title">Resolved Tickets</h6>
+                    <p class="display-6 fw-bold text-success">126</p>
+                    <p class="text-muted">Total completed cases</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card shadow-sm border-0">
+                <div class="card-body">
+                    <h6 class="card-title">Departments</h6>
+                    <p class="display-6 fw-bold text-warning">6</p>
+                    <p class="text-muted">Handling various requests</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h4 class="mb-3">Recent Activity</h4>
+    <div class="table-responsive mb-5">
+        <table class="table table-bordered table-hover">
+            <thead class="table-light">
+                <tr>
+                    <th>User</th>
+                    <th>Action</th>
+                    <th>Target</th>
+                    <th>Date</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>John Smith</td>
+                    <td>Updated ticket</td>
+                    <td>#1234</td>
+                    <td>2025-06-18 14:22</td>
+                </tr>
+                <tr>
+                    <td>Alice Zulu</td>
+                    <td>Added new user</td>
+                    <td>Peter Daniels</td>
+                    <td>2025-06-18 10:05</td>
+                </tr>
+                <tr>
+                    <td>Moses Khumalo</td>
+                    <td>Deleted department</td>
+                    <td>Legacy IT</td>
+                    <td>2025-06-17 16:47</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h4 class="mb-3">Quick User Overview</h4>
+    <div class="table-responsive">
+        <table class="table table-striped table-bordered">
+            <thead class="table-dark">
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Role</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Lindiwe N.</td>
+                    <td>lindiwe@company.com</td>
+                    <td>Technician</td>
+                    <td><span class="badge bg-success">Active</span></td>
+                </tr>
+                <tr>
+                    <td>Sipho D.</td>
+                    <td>sipho@company.com</td>
+                    <td>Manager</td>
+                    <td><span class="badge bg-danger">Disabled</span></td>
+                </tr>
+                <tr>
+                    <td>Zanele M.</td>
+                    <td>zanele@company.com</td>
+                    <td>Support Agent</td>
+                    <td><span class="badge bg-warning text-dark">Pending</span></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

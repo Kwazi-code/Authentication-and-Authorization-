@@ -1,0 +1,75 @@
+﻿@{
+    ViewData["Title"] = "Client Dashboard";
+}
+
+<div class="container mt-5">
+    <h2 class="mb-4">Welcome, @User.Identity.Name!</h2>
+
+    <div class="row g-4 mb-5">
+        <div class="col-md-4">
+            <div class="card shadow-sm border-0">
+                <div class="card-body">
+                    <h5 class="card-title">Active Tickets</h5>
+                    <p class="display-6 text-primary fw-bold">5</p>
+                    <p class="text-muted">Currently being worked on</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card shadow-sm border-0">
+                <div class="card-body">
+                    <h5 class="card-title">Resolved Tickets</h5>
+                    <p class="display-6 text-success fw-bold">12</p>
+                    <p class="text-muted">All time resolved</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card shadow-sm border-0">
+                <div class="card-body">
+                    <h5 class="card-title">Profile Status</h5>
+                    <p class="display-6 text-warning fw-bold">Verified</p>
+                    <p class="text-muted">Account is active</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h4 class="mb-3">Recent Tickets</h4>
+    <div class="table-responsive">
+        <table class="table table-bordered table-hover">
+            <thead class="table-light">
+                <tr>
+                    <th>Ticket ID</th>
+                    <th>Title</th>
+                    <th>Status</th>
+                    <th>Created At</th>
+                    <th>Last Updated</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>#1234</td>
+                    <td>Cannot access portal</td>
+                    <td><span class="badge bg-warning text-dark">In Progress</span></td>
+                    <td>2025-06-15</td>
+                    <td>2025-06-18</td>
+                </tr>
+                <tr>
+                    <td>#1228</td>
+                    <td>Software installation issue</td>
+                    <td><span class="badge bg-success">Resolved</span></td>
+                    <td>2025-06-10</td>
+                    <td>2025-06-13</td>
+                </tr>
+                <tr>
+                    <td>#1225</td>
+                    <td>System crashing randomly</td>
+                    <td><span class="badge bg-danger">Pending</span></td>
+                    <td>2025-06-09</td>
+                    <td>2025-06-11</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
